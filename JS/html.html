@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Registration</title>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+	</head>
+	<body>
+		<form name="main" method="post" onsubmit="return validateForm()">
+			Email:
+				<input name="login" type="text"  maxlength="30"/>
+			Password:
+				<input name="passwd" type="password"  maxlength="20"/>
+				<textarea id="txt" name="about" class="form-control" onkeyup="limitText(this);"></textarea>
+	
+			Left <span id="count">200</span> characters.
+				<input type="submit" name="enter" value="Go" vis/>
+		</form>
+		<script src="script.js"></script>
+	</body>
+</html>
